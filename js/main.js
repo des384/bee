@@ -17,7 +17,7 @@ $(function(){
 
      
     $('.menu__btn').on('click',function(event){
-      $('.menu__btn, .menu').toggleClass('active')
+      $('.menu__btn, .menu, .page__box').toggleClass('active')
      });
     
 
