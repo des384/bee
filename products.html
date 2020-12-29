@@ -7,6 +7,7 @@
   <title>Натуральный мед</title>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -63,42 +64,42 @@
           <div class="product__one-img"> <img src="images/product__one-1.png" alt=""> </div>
           <div class="product__one-title">Цветочный мёд</div>
           <div class="product__one-price">10,88$</div>
-          <a class="product__one-btn" href="#">Подробнее</a>
+          <a class="product__one-btn" data-fancybox data-src="#modal" href="javascript:;">Подробнее</a>
         </div>
 
         <div class="product__one mix category-bee-products" data-order="2">
           <div class="product__one-img"> <img src="images/product__one-2.png" alt=""> </div>
           <div class="product__one-title">Каштановый мёд</div>
           <div class="product__one-price">12,29$</div>
-          <a class="product__one-btn" href="#">Подробнее</a>
+          <a class="product__one-btn" data-fancybox data-src="#modal" href="javascript:;">Подробнее</a>
         </div>
 
         <div class="product__one mix category-sales" data-order="3">
           <div class="product__one-img"> <img src="images/product__one-3.png" alt=""> </div>
           <div class="product__one-title">Крем мёд с курагой</div>
           <div class="product__one-price">10,88$</div>
-          <a class="product__one-btn" href="#">Подробнее</a>
+          <a class="product__one-btn" data-fancybox data-src="#modal" href="javascript:;">Подробнее</a>
         </div>
 
         <div class="product__one mix category-honey" data-order="4">
           <div class="product__one-img"> <img src="images/product__one-4.png" alt=""> </div>
           <div class="product__one-title">Мёд из молочая (жидкий)</div>
           <div class="product__one-price">10,88$</div>
-          <a class="product__one-btn" href="#">Подробнее</a>
+          <a class="product__one-btn" data-fancybox data-src="#modal" href="javascript:;">Подробнее</a>
         </div>
 
         <div class="product__one mix category-bee-products" data-order="5">
           <div class="product__one-img"> <img src="images/product__one-5.png" alt=""> </div>
           <div class="product__one-title">Липовый мёд</div>
           <div class="product__one-price">9,90$</div>
-          <a class="product__one-btn" href="#">Подробнее</a>
+          <a class="product__one-btn" data-fancybox data-src="#modal" href="javascript:;">Подробнее</a>
         </div>
 
         <div class="product__one mix category-bee-products" data-order="6">
           <div class="product__one-img"> <img src="images/product__one-6.png" alt=""> </div>
           <div class="product__one-title">Мёд с живицей</div>
           <div class="product__one-price">7,80$</div>
-          <a class="product__one-btn" href="#">Подробнее</a>
+          <a class="product__one-btn" data-fancybox data-src="#modal" href="javascript:;">Подробнее</a>
         </div>
 
       </div>
@@ -152,10 +153,56 @@
  </div> 
 </footer> 
     
- 
+<div id="modal">
+  <div class="modal-top"></div>
+  <div class="modal-inner">
+    <div class="modal-img__inner">
+      <div class="modal-title">Каштановый мёд</div>
+      <div class="modal-img">
+        <img src="images/modal.png" alt="">
+      </div>
+    </div>
+    <div class="modal-info">
+      <div class="modal-text">
+        <p>Этот сорт относится к наиболее редко встречающимся и поэтому особо ценным продуктам пчеловодства. Сбор обладает уникальными характеристиками, изысканным вкусом. Особую ценность придают исключительные лечебные способности, богатый список микроэлементов и витаминов. В состав входят фитонциды, флавоноиды, алкалоиды, и другие полезные вещества, благотворно влияющие на состояние здоровья человека.
+
+        </p>
+      </div>
+      <div class="modal-order">
+        <div class="modal-quantity">
+          <div class="modal-quantity__name">Количество:</div>
+          <div class="modal-quantity__num">
+            <div class="quantity">
+            <input type="number" class="quant" min="1" max="9" step="1" value="1">
+          </div>
+        </div>
+        </div>
+        <div class="modal-value">
+          <div class="modal-value__name">Объем:</div>
+          <div class="modal-value__select">
+          <form>
+            <select>
+              <option>900 гр</option>
+              <option>650 гр</option>
+              <option>350 гр</option>
+            </select>
+          </form>
+          </div>
+        </div>
+        <div class="modal-cart">
+          <a href="" class="modal-cart__btn">В корзину</a>
+          <div class="modal-cart__price">
+           <span class="summ" data-quant="12">12.29</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
   
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script>
     AOS.init();
   </script>
